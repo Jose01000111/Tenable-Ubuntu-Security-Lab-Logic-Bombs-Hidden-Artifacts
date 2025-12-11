@@ -1,7 +1,7 @@
 # 🔍 Tenable Ubuntu Security Lab Logic Bombs Hidden Artifacts
 *A custom vulnerability investigation simulating the discovery of buried artifacts, malicious behaviors, and misconfigurations inside an inherited Ubuntu system — validated through Tenable authenticated vs. unauthenticated scanning.*
 
----
+--- 
 
 # 🌐 Scenario Overview  
 You’ve inherited an undocumented Ubuntu server suspected of past compromise.  
