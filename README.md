@@ -6,6 +6,7 @@
 # 🌐 Mission Brief: Ubuntu Artifact Investigation 
 > #### You’ve inherited an undocumented Ubuntu server suspected of past compromise ☠️ and your goal is to analyze it **offensively and defensively**, uncover buried artifacts, and validate all findings through Tenable scanning.
 
+<img width="838" height="463" alt="vgP76yf" src="https://github.com/user-attachments/assets/d5a60874-81b5-4eae-99eb-ced8eb0e7959" />
 
 ---
 
