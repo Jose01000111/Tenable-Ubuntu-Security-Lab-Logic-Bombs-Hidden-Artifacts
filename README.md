@@ -25,9 +25,9 @@ The goal is to analyze it **offensively and defensively**, detect buried artifac
 Screenshot placeholder: `![phase0](#)`
 
 ### 📝 NOTES
-> ### 🔵 Every vulnerability workflow begins with scope and expectations.  
-> ### 🔵 Baseline checks teach what “normal” should look like so deviations stand out during scanning.  
-> ### 🔵 Connectivity tests (ping, SSH) validate readiness for both authenticated and unauthenticated scanning.
+> #### 🔵 Every vulnerability workflow begins with scope and expectations.  
+> #### 🔵 Baseline checks teach what “normal” should look like so deviations stand out during scanning.  
+> #### 🔵 Connectivity tests (ping, SSH) validate readiness for both authenticated and unauthenticated scanning.
 
 ---
 
