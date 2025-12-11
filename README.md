@@ -1,5 +1,5 @@
 # 🔍 Tenable Ubuntu Security Lab: Logic Bombs & Hidden Artifacts
-*A custom vulnerability investigation simulating the discovery of buried artifacts, malicious behaviors, and misconfigurations inside an inherited Ubuntu system — validated through Tenable authenticated vs. unauthenticated scanning.*
+> #### A custom vulnerability investigation simulating the discovery of buried artifacts, malicious behaviors, and misconfigurations inside an inherited Ubuntu system — validated through Tenable authenticated vs. unauthenticated scanning.*
 
 ---
 
@@ -29,6 +29,8 @@ Screenshot placeholder: ![phase0](#)
 > ### 🔵 Baseline checks teach what “normal” should look like so deviations stand out during scanning.
 > ### 🔵 Connectivity tests (ping, SSH) validate readiness for both authenticated and unauthenticated scanning.
 
+---
+
 ## 🏴‍☠️ PHASE 1 — I Build the Vulnerable Image (Azure)
 Screenshot placeholder: ![phase1](#)
 
@@ -36,6 +38,8 @@ Screenshot placeholder: ![phase1](#)
 > ### 🔵 A clean VM baseline ensures all later findings are intentional and traceable.
 > ### 🔵 Open ports shape the exposed attack surface and influence unauthenticated scan results.
 > ### 🔵 System identity (OS version, kernel, packages) determines which CVEs Tenable will detect.
+
+---
 
 ## 🏴‍☠️ PHASE 2 — I Discover the Logic Bomb File Replicator
 Screenshot placeholder: ![phase2](#)
@@ -46,6 +50,8 @@ Screenshot placeholder: ![phase2](#)
 > ### 🔵 Replica files in /tmp simulate noisy attacker activity that authenticated Tenable scans can detect.
 > ### 🔵 Tenable plugins identify abnormal replication behavior through system auditing and file‑integrity checks.
 
+---
+
 ## 🏴‍☠️ PHASE 3 — I Find the Hidden Mystery File
 Screenshot placeholder: ![phase3](#)
 
@@ -54,6 +60,8 @@ Screenshot placeholder: ![phase3](#)
 > ### 🔵 Weak world-writable permissions illustrate misconfiguration-based risk, flagged by Tenable under insecure file permissions.
 > ### 🔵 Sensitive paths under /etc model real-world disclosure risks where secrets and credentials are often leaked.
 > ### 🔵 Authenticated scans reveal hidden artifacts that unauthenticated scans cannot detect.
+
+---
 
 ## 🏴‍☠️ PHASE 4 — I Investigate the Mystery Privileged User
 Screenshot placeholder: ![phase4](#)
@@ -64,6 +72,8 @@ Screenshot placeholder: ![phase4](#)
 > ### 🔵 SSH key persistence models stealthy long-term access, bypassing password and MFA policies.
 > ### 🔵 Reviewing passwd, shadow, and sudoers teaches core Linux account-hygiene skills.
 
+---
+
 ## 🏴‍☠️ PHASE 5 — I Configure the Tenable Scans
 Screenshot placeholder: ![phase5](#)
 
@@ -72,6 +82,8 @@ Screenshot placeholder: ![phase5](#)
 > ### 🔵 Authenticated scanning exposes the full system: users, permissions, installed packages, configs, running services.
 > ### 🔵 Authenticated scans consistently find 3–10× more vulnerabilities because they inspect internal state.
 > ### 🔵 Scan duration differences teach how deep enumeration affects performance and completeness.
+
+---
 
 ## 🏴‍☠️ PHASE 6 — I Solve the Issues
 
@@ -91,6 +103,8 @@ Screenshot placeholder: ![fixhidden](#)
 > ### 🔵 Authenticated scans confirm that misconfigurations are resolved, not just manually hidden.
 > ### 🔵 Artifact cleanup teaches investigative behavior, ensuring similar files aren’t elsewhere.
 
+---
+
 ### 🔧 Fixing the Privileged User
 Screenshot placeholder: ![fixuser](#)
 
@@ -100,6 +114,8 @@ Screenshot placeholder: ![fixuser](#)
 > ### 🔵 Deleting SSH keys closes persistence channels, restoring proper access controls.
 > ### 🔵 Tenable detects and validates account-level fixes via audit plugins.
 
+---
+
 ### 🔧 Fixing OS Vulnerabilities
 Screenshot placeholder: ![fixos](#)
 
@@ -108,6 +124,8 @@ Screenshot placeholder: ![fixos](#)
 > ### 🔵 Kernel upgrades eliminate dozens of CVEs at once, improving baseline host security.
 > ### 🔵 Patching teaches full lifecycle remediation, not just artifact removal.
 > ### 🔵 Re-running Tenable confirms CVE reduction and validated repair.
+
+---
 
 ## 🏴‍☠️ PHASE 7 — I Verify the Final Clean Scan
 Screenshot placeholder: ![finalscan](#)
