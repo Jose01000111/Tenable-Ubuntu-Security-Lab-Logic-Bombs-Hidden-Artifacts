@@ -21,121 +21,98 @@
 
 ---
 
-# 🟦 PHASE 0 — Ad Hoc Vulnerability Testing Agreement
-Screenshot placeholder: `![phase0](#)`
+🟦 PHASE 0 — I Assess the System: Ad Hoc Vulnerability Testing Agreement
+Screenshot placeholder: ![phase0](#)
 
-### 📝 NOTES
-> #### 🔵 Every vulnerability workflow begins with scope and expectations.  
-> #### 🔵 Baseline checks teach what “normal” should look like so deviations stand out during scanning.  
-> #### 🔵 Connectivity tests (ping, SSH) validate readiness for both authenticated and unauthenticated scanning.
+📝 NOTES
+> ### 🔵 Every vulnerability workflow begins with scope and expectations.
+> ### 🔵 Baseline checks teach what “normal” should look like so deviations stand out during scanning.
+> ### 🔵 Connectivity tests (ping, SSH) validate readiness for both authenticated and unauthenticated scanning.
 
----
+🟦 PHASE 1 — I Build the Vulnerable Image (Azure)
+Screenshot placeholder: ![phase1](#)
 
-# 🟦 PHASE 1 — Build the Vulnerable Image (Azure)
-Screenshot placeholder: `![phase1](#)`
+📝 NOTES
+> ### 🔵 A clean VM baseline ensures all later findings are intentional and traceable.
+> ### 🔵 Open ports shape the exposed attack surface and influence unauthenticated scan results.
+> ### 🔵 System identity (OS version, kernel, packages) determines which CVEs Tenable will detect.
 
-### 📝 NOTES
-> #### 🔵 A clean VM baseline ensures all later findings are intentional and traceable.  
-> #### 🔵 Open ports shape the exposed attack surface and influence unauthenticated scan results.  
-> #### 🔵 System identity (OS version, kernel, packages) determines which CVEs Tenable will detect.
+🟦 PHASE 2 — I Discover the Logic Bomb File Replicator
+Screenshot placeholder: ![phase2](#)
 
----
+📝 NOTES
+> ### 🔵 Logic bombs demonstrate persistence tied to user behavior, such as reading a file.
+> ### 🔵 .bashrc modification is a real attack technique because it guarantees execution when a user opens a shell.
+> ### 🔵 Replica files in /tmp simulate noisy attacker activity that authenticated Tenable scans can detect.
+> ### 🔵 Tenable plugins identify abnormal replication behavior through system auditing and file‑integrity checks.
 
-# 🟦 PHASE 2 — Vulnerability 1: Logic Bomb File Replicator
-Screenshot placeholder: `![phase2](#)`
+🟦 PHASE 3 — I Find the Hidden Mystery File
+Screenshot placeholder: ![phase3](#)
 
-### 📝 NOTES
-> #### 🔵 Logic bombs demonstrate persistence tied to user behavior, such as reading a file.  
-> #### 🔵 `.bashrc` modification is a real attack technique because it guarantees execution when a user opens a shell.  
-> #### 🔵 Replica files in `/tmp` simulate noisy attacker activity that authenticated Tenable scans can detect.  
-> #### 🔵 Tenable plugins identify abnormal replication behavior through system auditing and file‑integrity checks.
+📝 NOTES
+> ### 🔵 Hidden artifacts teach file discovery skills that go beyond simple ls usage.
+> ### 🔵 Weak world-writable permissions illustrate misconfiguration-based risk, flagged by Tenable under insecure file permissions.
+> ### 🔵 Sensitive paths under /etc model real-world disclosure risks where secrets and credentials are often leaked.
+> ### 🔵 Authenticated scans reveal hidden artifacts that unauthenticated scans cannot detect.
 
----
+🟦 PHASE 4 — I Investigate the Mystery Privileged User
+Screenshot placeholder: ![phase4](#)
 
-# 🟦 PHASE 3 — Vulnerability 2: Hidden Mystery File
-Screenshot placeholder: `![phase3](#)`
+📝 NOTES
+> ### 🔵 Unauthorized accounts are one of the highest-impact security gaps in real environments.
+> ### 🔵 Passwordless sudo represents a full privilege escalation path, immediately flagged by Tenable’s audit checks.
+> ### 🔵 SSH key persistence models stealthy long-term access, bypassing password and MFA policies.
+> ### 🔵 Reviewing passwd, shadow, and sudoers teaches core Linux account-hygiene skills.
 
-### 📝 NOTES
-> #### 🔵 Hidden artifacts teach file discovery skills that go beyond simple `ls` usage.  
-> #### 🔵 Weak world-writable permissions illustrate misconfiguration-based risk, flagged by Tenable under insecure file permissions.  
-> #### 🔵 Sensitive paths under `/etc` model real-world disclosure risks where secrets and credentials are often leaked.  
-> #### 🔵 Authenticated scans reveal hidden artifacts that unauthenticated scans cannot detect.
+🟦 PHASE 5 — I Configure the Tenable Scans
+Screenshot placeholder: ![phase5](#)
 
----
+📝 NOTES
+> ### 🔵 Unauthenticated scanning provides only external visibility (open ports, banners, surface CVEs).
+> ### 🔵 Authenticated scanning exposes the full system: users, permissions, installed packages, configs, running services.
+> ### 🔵 Authenticated scans consistently find 3–10× more vulnerabilities because they inspect internal state.
+> ### 🔵 Scan duration differences teach how deep enumeration affects performance and completeness.
 
-# 🟦 PHASE 4 — Vulnerability 3: Mystery Privileged User
-Screenshot placeholder: `![phase4](#)`
+🟦 PHASE 6 — I Solve the Issues
 
-### 📝 NOTES
-> #### 🔵 Unauthorized accounts are one of the highest-impact security gaps in real environments.  
-> #### 🔵 Passwordless sudo represents a full privilege escalation path, immediately flagged by Tenable’s audit checks.  
-> #### 🔵 SSH key persistence models stealthy long-term access, bypassing password and MFA policies.  
-> #### 🔵 Reviewing passwd, shadow, and sudoers teaches core Linux account-hygiene skills.
+🔧 Fixing the Logic Bomb
+Screenshot placeholder: ![fixlogicbomb](#)
 
----
+📝 NOTES
+> ### 🔵 Full removal requires tracking every persistence point, not just deleting output files.
+> ### 🔵 Cleaning .bashrc reinforces the importance of user-environment security.
+> ### 🔵 Tenable validation verifies remediation, proving the logic bomb no longer triggers or creates artifacts.
 
-# 🟦 PHASE 5 — Create the Tenable Scans
-Screenshot placeholder: `![phase5](#)`
+🔧 Fixing the Hidden File
+Screenshot placeholder: ![fixhidden](#)
 
-### 📝 NOTES
-> #### 🔵 Unauthenticated scanning provides only external visibility (open ports, banners, surface CVEs).  
-> #### 🔵 Authenticated scanning exposes the full system: users, permissions, installed packages, configs, running services.  
-> #### 🔵 Authenticated scans consistently find 3–10× more vulnerabilities because they inspect internal state.  
-> #### 🔵 Scan duration differences teach how deep enumeration affects performance and completeness.
+📝 NOTES
+> ### 🔵 Removing a sensitive file must include permission audits to ensure no insecure paths remain.
+> ### 🔵 Authenticated scans confirm that misconfigurations are resolved, not just manually hidden.
+> ### 🔵 Artifact cleanup teaches investigative behavior, ensuring similar files aren’t elsewhere.
 
----
+🔧 Fixing the Privileged User
+Screenshot placeholder: ![fixuser](#)
 
-# 🟦 PHASE 6 — Solve the Issues
+📝 NOTES
+> ### 🔵 Removing unauthorized accounts is a core vulnerability-management task.
+> ### 🔵 Eliminating passwordless sudo ensures the privilege escalation chain is broken.
+> ### 🔵 Deleting SSH keys closes persistence channels, restoring proper access controls.
+> ### 🔵 Tenable detects and validates account-level fixes via audit plugins.
 
-## 🔧 Fixing the Logic Bomb
-Screenshot placeholder: `![fixlogicbomb](#)`
+🔧 Fixing OS Vulnerabilities
+Screenshot placeholder: ![fixos](#)
 
-### 📝 NOTES
-> #### 🔵 Full removal requires tracking every persistence point, not just deleting output files.  
-> #### 🔵 Cleaning `.bashrc` reinforces the importance of user-environment security.  
-> #### 🔵 Tenable validation verifies remediation, proving the logic bomb no longer triggers or creates artifacts.
+📝 NOTES
+> ### 🔵 Outdated packages are the most common enterprise vulnerability source.
+> ### 🔵 Kernel upgrades eliminate dozens of CVEs at once, improving baseline host security.
+> ### 🔵 Patching teaches full lifecycle remediation, not just artifact removal.
+> ### 🔵 Re-running Tenable confirms CVE reduction and validated repair.
 
----
+🟦 PHASE 7 — I Verify the Final Clean Scan
+Screenshot placeholder: ![finalscan](#)
 
-## 🔧 Fixing the Hidden File
-Screenshot placeholder: `![fixhidden](#)`
-
-### 📝 NOTES
-> #### 🔵 Removing a sensitive file must include permission audits to ensure no insecure paths remain.  
-> #### 🔵 Authenticated scans confirm that misconfigurations are resolved, not just manually hidden.  
-> #### 🔵 Artifact cleanup teaches investigative behavior, ensuring similar files aren’t elsewhere.
-
----
-
-## 🔧 Fixing the Privileged User
-Screenshot placeholder: `![fixuser](#)`
-
-### 📝 NOTES
-> #### 🔵 Removing unauthorized accounts is a core vulnerability-management task.  
-> #### 🔵 Eliminating passwordless sudo ensures the privilege escalation chain is broken.  
-> #### 🔵 Deleting SSH keys closes persistence channels, restoring proper access controls.  
-> #### 🔵 Tenable detects and validates account-level fixes via audit plugins.
-
----
-
-### 🔧 Fixing OS Vulnerabilities
-Screenshot placeholder: `![fixos](#)`
-
-## 📝 NOTES
-> #### 🔵 Outdated packages are the most common enterprise vulnerability source.  
-> #### 🔵 Kernel upgrades eliminate dozens of CVEs at once, improving baseline host security.  
-> #### 🔵 Patching teaches full lifecycle remediation, not just artifact removal.  
-> #### 🔵 Re-running Tenable confirms CVE reduction and validated repair.
-
----
-
-# 🟦 PHASE 7 — Final Clean Scan
-Screenshot placeholder: `![finalscan](#)`
-
-### 📝 NOTES
-> #### 🔵 The final scan proves validated remediation across the entire host.  
-> #### 🔵 Confirms: logic bomb removed, hidden files removed, unauthorized users removed, permissions corrected, OS vulnerabilities patched.  
-> #### 🔵 Comparing authenticated vs unauthenticated results demonstrates the importance of full-credential scanning.
-
-
-
+📝 NOTES
+> ### 🔵 The final scan proves validated remediation across the entire host.
+> ### 🔵 Confirms: logic bomb removed, hidden files removed, unauthorized users removed, permissions corrected, OS vulnerabilities patched.
+> ### 🔵 Comparing authenticated vs unauthenticated results demonstrates the importance of full-credential scanning.
