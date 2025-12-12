@@ -36,7 +36,8 @@
 ---
 
 ## 🏴‍☠️ PHASE 1 — I Build the Vulnerable Image (Azure)
-Screenshot placeholder: ![phase1](#)
+## [📄Vulnerable VM Build]()
+<img width="647" height="492" alt="ajtSCUq" src="https://github.com/user-attachments/assets/f032fece-f43e-4e14-b523-326073f2ab3a" />
 
 ### 📝 NOTES
 > #### 🔵 A clean VM baseline ensures all later findings are intentional and traceable.
