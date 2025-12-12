@@ -36,7 +36,7 @@
 ---
 
 ## 🏴‍☠️ PHASE 1 — I Build the Vulnerable Image (Azure)
-## [📄Vulnerable VM Build]()
+## [📄Vulnerable VM Build](https://github.com/Jose01000111/Tenable-Ubuntu-Security-Lab-Logic-Bombs-Hidden-Artifacts/blob/main/build_vulnerabilities.sh)
 <img width="647" height="492" alt="ajtSCUq" src="https://github.com/user-attachments/assets/f032fece-f43e-4e14-b523-326073f2ab3a" />
 
 ### 📝 NOTES
