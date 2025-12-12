@@ -23,19 +23,18 @@
 
 ---
 ## 📚 Table of Contents
-- [🏴‍☠️ PHASE 0 — I Was Alerted to Unusual Behavior](#️-phase-0--i-was-alerted-to-unusual-behavior)
-- [🏴‍☠️ PHASE 1 — I Build the Vulnerable Image (Azure)](#️-phase-1--i-build-the-vulnerable-image-azure)
-- [🏴‍☠️ PHASE 2 — I Discover the Logic Bomb File Replicator](#️-phase-2--i-discover-the-logic-bomb-file-replicator)
-- [🏴‍☠️ PHASE 3 — I Find the Hidden Mystery File](#️-phase-3--i-find-the-hidden-mystery-file)
-- [🏴‍☠️ PHASE 4 — I Investigate the Mystery Privileged User](#️-phase-4--i-investigate-the-mystery-privileged-user)
-- [🏴‍☠️ PHASE 5 — I Configure the Tenable Scans](#️-phase-5--i-configure-the-tenable-scans)
-- [🏴‍☠️ PHASE 6 — I Solve the Issues](#️-phase-6--i-solve-the-issues)
-- [🏴‍☠️ PHASE 7 — I Verify the Final Clean Scan](#️-phase-7--i-verify-the-final-clean-scan)
+- [Tenable Ubuntu Security Lab: Logic Bombs & Hidden Artifacts](#tenable-ubuntu-security-lab-logic-bombs--hidden-artifacts)
+- [Mission Brief: Ubuntu Artifact Investigation](#mission-brief-ubuntu-artifact-investigation)
+- [Offensive‑Defensive Analysis vs Intentional Weaknesses](#offensive-defensive-analysis-vs-intentional-weaknesses)
+- [PHASE 0 — I Was Alerted to Unusual Behavior](#phase-0--i-was-alerted-to-unusual-behavior)
+- [PHASE 1 — I Build the Vulnerable Image (Azure)](#phase-1--i-build-the-vulnerable-image-azure)
+- [PHASE 2 — I Discover the Logic Bomb File Replicator](#phase-2--i-discover-the-logic-bomb-file-replicator)
+- [PHASE 3 — I Find the Hidden Mystery File](#phase-3--i-find-the-hidden-mystery-file)
+- [PHASE 4 — I Investigate the Mystery Privileged User](#phase-4--i-investigate-the-mystery-privileged-user)
+- [PHASE 5 — I Configure the Tenable Scans](#phase-5--i-configure-the-tenable-scans)
+- [PHASE 6 — I Solve the Issues](#phase-6--i-solve-the-issues)
+- [PHASE 7 — I Verify the Final Clean Scan](#phase-7--i-verify-the-final-clean-scan)
 
-## 🏴‍☠️ PHASE 0 — 📩 I Was Alerted to Unusual Behavior on a System — Per Our SLA Agreement, I Will Perform a Vulnerability Scan on the Ubuntu Server
-## [📄 SentinelCore – Chicago Hospital: SLA – Vulnerability Management](https://github.com/Jose01000111/Tenable-Ubuntu-Security-Lab-Logic-Bombs-Hidden-Artifacts/blob/main/SentinelCore%20%E2%80%93%20Chicago%20Hospital_SLA%20%E2%80%93%20Vulnerability%20Management.pdf)
-## [📄 SentinelCore – Chicago Hospital: Ad Hoc Vulnerability Agreement](https://github.com/Jose01000111/Tenable-Ubuntu-Security-Lab-Logic-Bombs-Hidden-Artifacts/blob/main/SentinelCore%20%E2%80%93%20Chicago%20Hospital_Ad%20Hoc%20Vulnerability%20Management%20Agreement.pdf)
-<img width="594" height="450" alt="z3Wef4q" src="https://github.com/user-attachments/assets/70d1a701-436f-4981-8166-a670ea6442ce" />
 
 ### 📝 NOTES
 > #### 🔵 Every vulnerability workflow begins with scope and expectations.
