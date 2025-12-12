@@ -24,8 +24,10 @@
 ---
 
 ## 🏴‍☠️ PHASE 0 — 📩 I Was Alerted to Unusual Behavior on a System — Per Our SLA Agreement, I Will Perform a Vulnerability Scan on the Ubuntu Server
-Screenshot placeholder: ![phase0](#)
+<img width="594" height="450" alt="z3Wef4q" src="https://github.com/user-attachments/assets/70d1a701-436f-4981-8166-a670ea6442ce" />
 
+[]()
+[]()
 ## 📝 NOTES
 > #### 🔵 Every vulnerability workflow begins with scope and expectations.
 > #### 🔵 Baseline checks teach what “normal” should look like so deviations stand out during scanning.
