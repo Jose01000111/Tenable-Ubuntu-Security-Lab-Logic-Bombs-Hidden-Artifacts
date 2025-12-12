@@ -24,7 +24,7 @@
 ---
 
 ## 🏴‍☠️ PHASE 0 — 📩 I Was Alerted to Unusual Behavior on a System — Per Our SLA Agreement, I Will Perform a Vulnerability Scan on the Ubuntu Server
-## [📄 SentinelCore – Chicago Hospital: SLA – Vulnerability Management](SentinelCore – Chicago Hospital_SLA – Vulnerability Management.pdf)
+## [📄 SentinelCore – Chicago Hospital: SLA – Vulnerability Management]()
 ## [📄 SentinelCore – Chicago Hospital: Ad Hoc Vulnerability Agreement]()
 <img width="594" height="450" alt="z3Wef4q" src="https://github.com/user-attachments/assets/70d1a701-436f-4981-8166-a670ea6442ce" />
 
