@@ -22,18 +22,7 @@
 | Repair and re‑scan to confirm remediation | |
 
 ---
-## 📚 Table of Contents
-- [Tenable Ubuntu Security Lab: Logic Bombs & Hidden Artifacts](#tenable-ubuntu-security-lab-logic-bombs--hidden-artifacts)
-- [Mission Brief: Ubuntu Artifact Investigation](#mission-brief-ubuntu-artifact-investigation)
-- [Offensive-Defensive Analysis vs Intentional Weaknesses](#offensive-defensive-analysis-vs-intentional-weaknesses)
-- [Phase 0 — I Was Alerted to Unusual Behavior](#phase-0--i-was-alerted-to-unusual-behavior)
-- [Phase 1 — I Build the Vulnerable Image Azure](#phase-1--i-build-the-vulnerable-image-azure)
-- [Phase 2 — I Discover the Logic Bomb File Replicator](#phase-2--i-discover-the-logic-bomb-file-replicator)
-- [Phase 3 — I Find the Hidden Mystery File](#phase-3--i-find-the-hidden-mystery-file)
-- [Phase 4 — I Investigate the Mystery Privileged User](#phase-4--i-investigate-the-mystery-privileged-user)
-- [Phase 5 — I Configure the Tenable Scans](#phase-5--i-configure-the-tenable-scans)
-- [Phase 6 — I Solve the Issues](#phase-6--i-solve-the-issues)
-- [Phase 7 — I Verify the Final Clean Scan](#phase-7--i-verify-the-final-clean-scan)
+
 
 
 
