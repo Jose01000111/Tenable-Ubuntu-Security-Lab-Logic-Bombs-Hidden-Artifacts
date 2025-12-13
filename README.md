@@ -46,7 +46,18 @@
 
 ---
 
-## 🏴‍☠️ PHASE 2 — I Discover the Logic Bomb File Replicator
+## 🏴‍☠️ PHASE 2 — I Configure the Tenable Scans
+Screenshot placeholder: ![phase5](#)
+
+### 📝 NOTES
+> #### 🔵 Unauthenticated scanning provides only external visibility (open ports, banners, surface CVEs).
+> #### 🔵 Authenticated scanning exposes the full system: users, permissions, installed packages, configs, running services.
+> #### 🔵 Authenticated scans consistently find 3–10× more vulnerabilities because they inspect internal state.
+> #### 🔵 Scan duration differences teach how deep enumeration affects performance and completeness.
+
+---
+
+## 🏴‍☠️ PHASE 3 — I Discover the Logic Bomb File Replicator
 Screenshot placeholder: ![phase2](#)
 
 ### 📝 NOTES
@@ -57,7 +68,7 @@ Screenshot placeholder: ![phase2](#)
 
 ---
 
-## 🏴‍☠️ PHASE 3 — I Find the Hidden Mystery File
+## 🏴‍☠️ PHASE 4 — I Find the Hidden Mystery File
 Screenshot placeholder: ![phase3](#)
 
 ### 📝 NOTES
@@ -68,7 +79,7 @@ Screenshot placeholder: ![phase3](#)
 
 ---
 
-## 🏴‍☠️ PHASE 4 — I Investigate the Mystery Privileged User
+## 🏴‍☠️ PHASE 5 — I Investigate the Mystery Privileged User
 Screenshot placeholder: ![phase4](#)
 
 ### 📝 NOTES
@@ -76,17 +87,6 @@ Screenshot placeholder: ![phase4](#)
 > #### 🔵 Passwordless sudo represents a full privilege escalation path, immediately flagged by Tenable’s audit checks.
 > #### 🔵 SSH key persistence models stealthy long-term access, bypassing password and MFA policies.
 > #### 🔵 Reviewing passwd, shadow, and sudoers teaches core Linux account-hygiene skills.
-
----
-
-## 🏴‍☠️ PHASE 5 — I Configure the Tenable Scans
-Screenshot placeholder: ![phase5](#)
-
-### 📝 NOTES
-> #### 🔵 Unauthenticated scanning provides only external visibility (open ports, banners, surface CVEs).
-> #### 🔵 Authenticated scanning exposes the full system: users, permissions, installed packages, configs, running services.
-> #### 🔵 Authenticated scans consistently find 3–10× more vulnerabilities because they inspect internal state.
-> #### 🔵 Scan duration differences teach how deep enumeration affects performance and completeness.
 
 ---
 
