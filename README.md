@@ -11,7 +11,7 @@
 
 ---
 
-# 🧪 Offensive‑Defensive Analysis vs. Intentional Weaknesses
+# 🧪 Offensive‑Defensive Analysis vs. Intentional Weaknesses 
 
 | Offensive‑Defensive Analysis | Intentional Weakness Inside VM |
 |------------------------------|--------------------------------|
