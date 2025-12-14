@@ -47,7 +47,7 @@
 ---
 
 ## 🏴‍☠️ PHASE 2 — I Start With an Initial Scan
-## [👉📄Chicago-HospitalVM-Initial Scan]()
+## [👉📄Chicago-HospitalVM-Initial Scan](https://github.com/Jose01000111/Tenable-Ubuntu-Security-Lab-Logic-Bombs-Hidden-Artifacts/blob/main/Chicago-HospitalVM_____Initial_Baseline_Scan.pdf)
 <img width="1030" height="53" alt="5uj44Fn" src="https://github.com/user-attachments/assets/ec7a7d48-b5b5-4946-86a7-8de8d80180cb" />
 
 ### 📝 NOTES
