@@ -47,7 +47,7 @@
 ---
 
 ## 🏴‍☠️ PHASE 2 — I Start With an Initial Scan
-Screenshot placeholder: ![phase5](#)
+<img width="1030" height="53" alt="5uj44Fn" src="https://github.com/user-attachments/assets/ec7a7d48-b5b5-4946-86a7-8de8d80180cb" />
 
 ### 📝 NOTES
 > #### 🔵 I begin with an **unauthenticated Tenable scan** to establish a baseline of external visibility.
@@ -59,36 +59,33 @@ Screenshot placeholder: ![phase5](#)
 
 ---
 
-## 🏴‍☠️ PHASE 3 — I Discover the Logic Bomb File Replicator
-Screenshot placeholder: ![phase2](#)
+## 🏴‍☠️ PHASE 3 — I Investigate Hidden Persistence and Privilege Risks
 
-### 📝 NOTES
-> #### 🔵 Logic bombs demonstrate persistence tied to user behavior, such as reading a file.
-> #### 🔵 .bashrc modification is a real attack technique because it guarantees execution when a user opens a shell.
-> #### 🔵 Replica files in /tmp simulate noisy attacker activity that authenticated Tenable scans can detect.
-> #### 🔵 Tenable plugins identify abnormal replication behavior through system auditing and file‑integrity checks.
+### 🔍 3.1 — I Discover the Logic Bomb File Replicator
+
 
 ---
 
-## 🏴‍☠️ PHASE 4 — I Find the Hidden Mystery File
-Screenshot placeholder: ![phase3](#)
+### 🔍 3.2 — I Find the Hidden Mystery File
 
-### 📝 NOTES
-> #### 🔵 Hidden artifacts teach file discovery skills that go beyond simple ls usage.
-> #### 🔵 Weak world-writable permissions illustrate misconfiguration-based risk, flagged by Tenable under insecure file permissions.
-> #### 🔵 Sensitive paths under /etc model real-world disclosure risks where secrets and credentials are often leaked.
-> #### 🔵 Authenticated scans reveal hidden artifacts that unauthenticated scans cannot detect.
 
 ---
 
-## 🏴‍☠️ PHASE 5 — I Investigate the Mystery Privileged User
-Screenshot placeholder: ![phase4](#)
+### 🔍 3.3 — I Investigate the Mystery Privileged User
+
+
+---
 
 ### 📝 NOTES
-> #### 🔵 Unauthorized accounts are one of the highest-impact security gaps in real environments.
-> #### 🔵 Passwordless sudo represents a full privilege escalation path, immediately flagged by Tenable’s audit checks.
-> #### 🔵 SSH key persistence models stealthy long-term access, bypassing password and MFA policies.
-> #### 🔵 Reviewing passwd, shadow, and sudoers teaches core Linux account-hygiene skills.
+> #### 🔵 I identify a logic bomb mechanism that demonstrates persistence tied to user behavior, such as execution triggered when a shell is launched or a file is accessed.
+> #### 🔵 I confirm that modifications to startup files like `.bashrc` guarantee repeated execution, modeling a realistic attacker persistence technique.
+> #### 🔵 I observe abnormal file replication in locations such as `/tmp`, simulating noisy attacker activity that authenticated Tenable scans are able to detect through system auditing and file-integrity checks.
+> #### 🔵 I uncover hidden files and weak world-writable permissions, highlighting misconfiguration-based risks that unauthenticated scans cannot see.
+> #### 🔵 I examine sensitive paths under `/etc` to understand how credentials, secrets, and configuration data are commonly exposed in real environments.
+> #### 🔵 I discover an unauthorized or undocumented user account, reinforcing how high-impact account hygiene issues surface during credentialed assessments.
+> #### 🔵 I verify that passwordless sudo provides a direct privilege-escalation path, which Tenable reliably flags during local security audits.
+> #### 🔵 I analyze SSH key-based persistence to understand how attackers maintain long-term access while bypassing password controls and MFA.
+> #### 🔵 I review `/etc/passwd`, `/etc/shadow`, and `/etc/sudoers` to validate user permissions and strengthen my understanding of Linux access control.
 
 ---
 
