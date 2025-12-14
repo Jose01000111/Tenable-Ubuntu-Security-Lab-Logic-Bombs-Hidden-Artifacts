@@ -46,14 +46,16 @@
 
 ---
 
-## 🏴‍☠️ PHASE 2 — I Configure the Tenable Scans
+## 🏴‍☠️ PHASE 2 — I Start With an Initial Scan
 Screenshot placeholder: ![phase5](#)
 
 ### 📝 NOTES
-> #### 🔵 Unauthenticated scanning provides only external visibility (open ports, banners, surface CVEs).
-> #### 🔵 Authenticated scanning exposes the full system: users, permissions, installed packages, configs, running services.
-> #### 🔵 Authenticated scans consistently find 3–10× more vulnerabilities because they inspect internal state.
-> #### 🔵 Scan duration differences teach how deep enumeration affects performance and completeness.
+> #### 🔵 I begin with an **unauthenticated Tenable scan** to establish a baseline of external visibility.
+> #### 🔵 This scan identifies exposed ports, service banners, and surface-level vulnerabilities only.
+> #### 🔵 I then configure and run an **authenticated scan** to inspect internal system state.
+> #### 🔵 Authenticated scanning reveals users, permissions, installed packages, configurations, and running services.
+> #### 🔵 Authenticated scans consistently uncover **3–10× more vulnerabilities** than unauthenticated scans.
+> #### 🔵 Differences in scan duration highlight the impact of deeper enumeration on performance and completeness.
 
 ---
 
