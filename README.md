@@ -63,31 +63,34 @@
 ## 🏴‍☠️ PHASE 3 — I Investigate Hidden Persistence and Privilege Risks
 <img width="589" height="506" alt="7yMVilk" src="https://github.com/user-attachments/assets/db52f36c-81fc-4cf9-ad36-2fe9d36e2ef7" />
 
+## [👉📄]()
 ### 🔍 3.1 — I Discover the Logic Bomb File Replicator
+<img width="1093" height="102" alt="i8PFKzB" src="https://github.com/user-attachments/assets/5ff16206-25f3-4efe-b561-f31eeafe76da" />
 
+### 📝 NOTES
+#### 🔵 `/tmp` is a world-writable directory commonly abused for persistence and file replication.
+#### 🔵 Shell startup files are inspected because they guarantee execution when a user opens a session.
+#### 🔵 Monitoring `/tmp` confirms whether automated or hidden file creation is occurring.
 
 ---
 
 ### 🔍 3.2 — I Find the Hidden Mystery File
+<img width="704" height="125" alt="s5hE8vD" src="https://github.com/user-attachments/assets/96419dbb-5a69-4304-9895-b32797e998c7" />
 
+### 📝 NOTES
+#### 🔵 World-writable files in `/etc` represent a critical misconfiguration risk.
+#### 🔵 Any user can modify sensitive system files when permissions are overly permissive.
+#### 🔵 Authenticated scans reliably detect insecure file permission violations.
 
 ---
 
 ### 🔍 3.3 — I Investigate the Mystery Privileged User
-
-
----
+<img width="619" height="148" alt="j6RNAeA" src="https://github.com/user-attachments/assets/093832c8-3cd9-455f-a1fd-b9f36eeca994" />
 
 ### 📝 NOTES
-> #### 🔵 I identify a logic bomb mechanism that demonstrates persistence tied to user behavior, such as execution triggered when a shell is launched or a file is accessed.
-> #### 🔵 I confirm that modifications to startup files like `.bashrc` guarantee repeated execution, modeling a realistic attacker persistence technique.
-> #### 🔵 I observe abnormal file replication in locations such as `/tmp`, simulating noisy attacker activity that authenticated Tenable scans are able to detect through system auditing and file-integrity checks.
-> #### 🔵 I uncover hidden files and weak world-writable permissions, highlighting misconfiguration-based risks that unauthenticated scans cannot see.
-> #### 🔵 I examine sensitive paths under `/etc` to understand how credentials, secrets, and configuration data are commonly exposed in real environments.
-> #### 🔵 I discover an unauthorized or undocumented user account, reinforcing how high-impact account hygiene issues surface during credentialed assessments.
-> #### 🔵 I verify that passwordless sudo provides a direct privilege-escalation path, which Tenable reliably flags during local security audits.
-> #### 🔵 I analyze SSH key-based persistence to understand how attackers maintain long-term access while bypassing password controls and MFA.
-> #### 🔵 I review `/etc/passwd`, `/etc/shadow`, and `/etc/sudoers` to validate user permissions and strengthen my understanding of Linux access control.
+#### 🔵 Root SSH access provides direct administrative control over the system.
+#### 🔵 Sudo privileges allow full privilege escalation from standard users.
+#### 🔵 Credentialed scans expose authentication and authorization weaknesses.
 
 ---
 
