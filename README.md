@@ -63,7 +63,7 @@
 ## 🏴‍☠️ PHASE 3 — I Investigate Hidden Persistence and Privilege Risks
 <img width="589" height="506" alt="7yMVilk" src="https://github.com/user-attachments/assets/db52f36c-81fc-4cf9-ad36-2fe9d36e2ef7" />
 
-## [👉📄]()
+## [👉📄Persistence & Privilege Investigation](https://github.com/Jose01000111/Tenable-Ubuntu-Security-Lab-Logic-Bombs-Hidden-Artifacts/blob/main/phase3_hidden_persistence_privilege_lab.sh)
 ### 🔍 3.1 — I Discover the Logic Bomb File Replicator
 <img width="1093" height="102" alt="i8PFKzB" src="https://github.com/user-attachments/assets/5ff16206-25f3-4efe-b561-f31eeafe76da" />
 
