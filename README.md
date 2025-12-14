@@ -61,6 +61,7 @@
 ---
 
 ## 🏴‍☠️ PHASE 3 — I Investigate Hidden Persistence and Privilege Risks
+<img width="589" height="506" alt="7yMVilk" src="https://github.com/user-attachments/assets/db52f36c-81fc-4cf9-ad36-2fe9d36e2ef7" />
 
 ### 🔍 3.1 — I Discover the Logic Bomb File Replicator
 
