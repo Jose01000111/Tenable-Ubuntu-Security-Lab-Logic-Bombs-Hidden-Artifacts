@@ -133,6 +133,20 @@
 > #### 🔵 Iptables rules drop timestamp requests (type 13) and replies (type 14), with persistence across reboots.
 > #### 🔵 Tenable information-gathering checks confirm the host no longer responds to these queries.
 
+# 🛡️ Azure VM Remediation Validation
+
+## STEP 1 — SMB Signing
+![SMB Signing Validation](link-to-screenshot)
+
+## STEP 2 — Python Packages Updated
+![Python Packages Validation](link-to-screenshot)
+
+## STEP 3 — Python 2.7 Removed
+![Python 2.7 Removal Validation](link-to-screenshot)
+
+## STEP 4 — ICMP Timestamp Requests Blocked
+![ICMP Block Validation](link-to-screenshot)
+
 ---
 
 ## 🏴‍☠️ PHASE 7 — I Verify the Final Clean Scan
