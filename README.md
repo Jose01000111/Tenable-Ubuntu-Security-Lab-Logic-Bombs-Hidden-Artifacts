@@ -94,45 +94,47 @@
 
 ---
 
-## 🏴‍☠️ PHASE 6 — I Solve the Issues
+## 🏴‍☠️ PHASE 4 — I Solve the Issues: Full Remediation of Identified Vulnerabilities
+## [👉📄]()
+<img width="664" height="540" alt="bga4jGy" src="https://github.com/user-attachments/assets/5ab3aa1a-ce67-4c80-9e77-82e4233082da" />
 
-### 🔧 Fixing the Logic Bomb
-Screenshot placeholder: ![fixlogicbomb](#)
+### 4.1 🔧 Remediating SMB Signing Not Required (Plugin ID: 57608)
+**Screenshot placeholder:** ![smb-signing-fix](#)
 
-### 📝 NOTES
-> #### 🔵 Full removal requires tracking every persistence point, not just deleting output files.
-> #### 🔵 Cleaning .bashrc reinforces the importance of user-environment security.
-> #### 🔵 Tenable validation verifies remediation, proving the logic bomb no longer triggers or creates artifacts.
-
-### 🔧 Fixing the Hidden File
-Screenshot placeholder: ![fixhidden](#)
-
-### 📝 NOTES
-> #### 🔵 Removing a sensitive file must include permission audits to ensure no insecure paths remain.
-> #### 🔵 Authenticated scans confirm that misconfigurations are resolved, not just manually hidden.
-> #### 🔵 Artifact cleanup teaches investigative behavior, ensuring similar files aren’t elsewhere.
+**📝 NOTES**
+> #### 🔵 Mandatory SMB signing prevents man-in-the-middle attacks by enforcing message integrity and authentication.
+> #### 🔵 The fix adds "server signing = mandatory" to Samba's global configuration and restarts the service.
+> #### 🔵 Tenable rescans confirm that unsigned SMB connections are no longer allowed.
 
 ---
 
-### 🔧 Fixing the Privileged User
-Screenshot placeholder: ![fixuser](#)
+### 4.2 🔧 Remediating Python Vulnerabilities (Plugin ID: 235360 — USN-7488-1)
+**Screenshot placeholder:** ![python-update-fix](#)
 
-### 📝 NOTES
-> #### 🔵 Removing unauthorized accounts is a core vulnerability-management task.
-> #### 🔵 Eliminating passwordless sudo ensures the privilege escalation chain is broken.
-> #### 🔵 Deleting SSH keys closes persistence channels, restoring proper access controls.
-> #### 🔵 Tenable detects and validates account-level fixes via audit plugins.
+**📝 NOTES**
+> #### 🔵 Vulnerabilities affect Python packages across multiple Ubuntu LTS releases.
+> #### 🔵 Running apt update and upgrade patches the vulnerable packages and their dependencies.
+> #### 🔵 Post-remediation Tenable scans verify the issues are fully resolved.
 
 ---
 
-### 🔧 Fixing OS Vulnerabilities
-Screenshot placeholder: ![fixos](#)
+### 4.3 🔧 Remediating Python 2.7 Vulnerabilities (Plugin ID: 214323 — USN-7212-1)
+**Screenshot placeholder:** ![python2-removal-fix](#)
 
-### 📝 NOTES
-> #### 🔵 Outdated packages are the most common enterprise vulnerability source.
-> #### 🔵 Kernel upgrades eliminate dozens of CVEs at once, improving baseline host security.
-> #### 🔵 Patching teaches full lifecycle remediation, not just artifact removal.
-> #### 🔵 Re-running Tenable confirms CVE reduction and validated repair.
+**📝 NOTES**
+> #### 🔵 Python 2.7 is end-of-life and carries unpatchable security risks.
+> #### 🔵 Complete removal of python2 packages eliminates the vulnerable interpreter.
+> #### 🔵 Tenable rescans no longer detect Python 2.7-related vulnerabilities.
+
+---
+
+### 4.4 🔧 Remediating ICMP Timestamp Request Remote Date Disclosure (Plugin ID: 10114)
+**Screenshot placeholder:** ![icmp-block-fix](#)
+
+**📝 NOTES**
+> #### 🔵 ICMP timestamp responses can leak system uptime, aiding attacker reconnaissance.
+> #### 🔵 Iptables rules drop timestamp requests (type 13) and replies (type 14), with persistence across reboots.
+> #### 🔵 Tenable information-gathering checks confirm the host no longer responds to these queries.
 
 ---
 
