@@ -1,10 +1,11 @@
 # 🔍 Tenable Ubuntu Security Lab: Logic Bombs & Hidden Artifacts
-> ### A custom vulnerability investigation by **SentinelCore Security Operations**, led by **Jose G.**, simulating the discovery of buried artifacts, malicious behaviors, and misconfigurations inside an inherited Ubuntu system — validated through Tenable authenticated vs. unauthenticated scanning.*
-> 
+> ### An **ad hoc vulnerability investigation** conducted by **SentinelCore Security Operations**, led by **Jose G.**, simulating the discovery of buried artifacts, malicious behaviors, and misconfigurations inside an inherited Ubuntu system, executed under **prior authorization and agreed scope**. This authorization allows direct execution without the full formal vulnerability management lifecycle, with findings validated through Tenable scanning.*
+
 ---
 
-# 🌐 Mission Brief: Ubuntu Artifact Investigation 
-> ### You’ve inherited an undocumented Ubuntu server suspected of past compromise ☠️ and your goal is to analyze it **offensively and defensively**, uncover buried artifacts, and validate all findings through Tenable scanning — under the procedures executed by **SentinelCore Security Operations** and **Jose G.**
+# 🌐 Mission Brief: Ubuntu Artifact Investigation
+> ### I inherit an undocumented Ubuntu server suspected of past compromise ☠️ and perform an **ad hoc offensive and defensive analysis** to uncover buried artifacts, malicious behaviors, and misconfigurations. All findings are validated through Tenable scanning under **pre-approved procedures**, executed by **SentinelCore Security Operations** and myself (**Jose G.**), enabling rapid discovery, documentation, and remediation awareness.
+
 
 
 <img width="838" height="463" alt="vgP76yf" src="https://github.com/user-attachments/assets/d5a60874-81b5-4eae-99eb-ced8eb0e7959" />
