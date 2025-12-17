@@ -95,7 +95,7 @@
 ---
 
 ## 🏴‍☠️ PHASE 4 — I Solve the Issues: Full Remediation of Identified Vulnerabilities
-## [👉📄]()
+## [👉📄](https://github.com/Jose01000111/Tenable-Ubuntu-Security-Lab-Logic-Bombs-Hidden-Artifacts/blob/main/remediate_vulnerabilities.sh)
 <img width="664" height="540" alt="bga4jGy" src="https://github.com/user-attachments/assets/5ab3aa1a-ce67-4c80-9e77-82e4233082da" />
 
 ### 4.1 🔧 Remediating SMB Signing Not Required (Plugin ID: 57608)
