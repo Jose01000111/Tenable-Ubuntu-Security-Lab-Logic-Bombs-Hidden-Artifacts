@@ -199,11 +199,30 @@
 
 ---
 
-## 🏴‍☠️ PHASE 6 — I Verify the Final Clean Scan
-Screenshot placeholder: ![finalscan](#)
+# 🏴‍☠️ PHASE 6 — I Verify the Final Clean Scan
+<img width="349" height="260" alt="QgvptBn" src="https://github.com/user-attachments/assets/8dad3e56-82da-4a6d-92f4-1fa441c0bea1" />
 
-### 📝 NOTES
-> #### 🔵 The final scan proves validated remediation across the entire host.
-> #### 🔵 Confirms: logic bomb removed, hidden files removed, unauthorized users removed, permissions corrected, OS vulnerabilities patched.
-> #### 🔵 Comparing authenticated vs unauthenticated results demonstrates the importance of full-credential scanning.
+<img width="688" height="733" alt="YXNHq1R" src="https://github.com/user-attachments/assets/6a0b7b71-2d83-4329-98e2-3348e37bf9f9" />
+
+## 📝 NOTES
+- 🔵 Final scan confirms remediation across the entire host.  
+- 🔵 Validates removal of logic bombs, hidden files, unauthorized users, and misconfigurations.  
+
+---
+
+# 🏴‍☠️ PHASE 7 — STIG Implementation & Verification (Part 2 Lab)
+<img width="663" height="534" alt="cWnk41c" src="https://github.com/user-attachments/assets/5a5be55d-c93e-40fc-ae09-e60b34b5b059" />
+
+## 📝 NOTES
+- 🔵 Final scan confirms remediation across the entire host.  
+- 🔵 Validates removal of logic bombs, hidden files, unauthorized users, and misconfigurations.  
+- 🔵 STIG-based hardening is **approved in the MOU**; implementation will proceed in the next phase.
+
+---
+
+## 🔗 Part 2 Lab
+[Working on part Part 2 ](#)
+
+
+
 
