@@ -51,12 +51,8 @@
 <img width="1030" height="53" alt="5uj44Fn" src="https://github.com/user-attachments/assets/ec7a7d48-b5b5-4946-86a7-8de8d80180cb" />
 
 ### 📝 NOTES
-> #### 🔵 I begin with an **unauthenticated Tenable scan** to establish a baseline of external visibility.
-> #### 🔵 This scan identifies exposed ports, service banners, and surface-level vulnerabilities only.
-> #### 🔵 I then configure and run an **authenticated scan** to inspect internal system state.
-> #### 🔵 Authenticated scanning reveals users, permissions, installed packages, configurations, and running services.
-> #### 🔵 Authenticated scans consistently uncover **3–10× more vulnerabilities** than unauthenticated scans.
-> #### 🔵 Differences in scan duration highlight the impact of deeper enumeration on performance and completeness.
+> #### 🔵 I run a single unauthenticated Tenable network scan to establish a basic security baseline.
+> #### 🔵 This scan identifies exposed ports, visible services, and high-level vulnerabilities from an external perspective.
 
 ---
 
