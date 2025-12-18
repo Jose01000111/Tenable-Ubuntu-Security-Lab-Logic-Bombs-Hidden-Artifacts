@@ -220,9 +220,9 @@
 
 ---
 ## 🔗 STIG Implementation & Vulnerability Management – Part 2
-### 🛡️ Continuing the Ubuntu Security Lab from Part 1, this lab dives deeper into **STIG hardening, vulnerability management, and practical remediation**.  
+### 🛡️ Building on Part 1, this lab demonstrates **STIG hardening and vulnerability management practices** on Ubuntu.  
 
-## [💻 Explore Part 2 Lab on GitHub](https://github.com/Jose01000111/STIG-Implementation-Vulnerability-Lab-on-Ubuntu-Server-for-Chicago-Hospital.git)
+## [👉💻 Explore Part 2 Lab on GitHub](https://github.com/Jose01000111/STIG-Implementation-Vulnerability-Lab-on-Ubuntu-Server-for-Chicago-Hospital.git)
 
 
 
